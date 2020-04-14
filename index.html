@@ -29,133 +29,165 @@
         <div class="form">
             <h2>Selecione curso desejado</h2>
 
-            <div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            Curso da Fran
-        </button>
-      </h2>
-    </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Curso da Fran
+            </button>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-       
-        <form action="https://formspree.io/mknvygdg">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Curso da Fran</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="POST" action="https://formspree.io/mknvygdg">
 
-            <br>
-            <label for="nome">
-                Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-            </label>
+                                <br>
+                                <label for="nome">
+                                    Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                                </label>
 
-            <br>
+                                <br>
 
-            <label for="email">
-                Email: <input type="email" name="email" id="email" placeholder="Digite seu email">
-            </label>
+                                <label for="email">
+                                    Email: <input type="email" name="email" id="email" placeholder="Digite seu email">
+                                </label>
 
-            <br>
+                                <br>
 
-            <p>Algum comentario?</p>
-            <label for="curso">
-                <textarea name="curso" id="curso" cols="30" rows="10"
-                    placeholder="Digite aqui o seu comentario"></textarea>
-            </label>
+                                <p>Algum comentario?</p>
+                                <label for="curso">
+                                    <textarea name="comentario" id="curso" cols="30" rows="10"
+                                        placeholder="Digite aqui o seu comentario"></textarea>
+                                </label>
 
-            <br>
-            <input type="submit" class="bts">
+                                <br>
+                                <input type="submit" class="bts">
 
-            <input type="reset" class="bts">
+                                <input type="reset" class="bts">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Curso da Michele
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        <form action="https://formspree.io/xwknykjw">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModa2">
+                Curso da Michele
+            </button>
 
-            <br>
-            <label for="nome">
-                Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-            </label>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"> Curso da Michele</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="POST" action="https://formspree.io/xaydvqvj">
 
-            <br>
+                                <br>
+                                <label for="nome">
+                                    Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                                </label>
 
-            <label for="email">
-                Email: <input type="email" name="email" id="email" placeholder="Digite seu email">
-            </label>
+                                <br>
 
-            <br>
+                                <label for="email">
+                                    Email: <input type="email" name="email" id="email" placeholder="Digite seu email">
+                                </label>
 
-            <p>Algum comentario?</p>
-            <label for="curso">
-                <textarea name="curso" id="curso" cols="30" rows="10"
-                    placeholder="Digite aqui o seu comentario"></textarea>
-            </label>
+                                <br>
 
-            <br>
-            <input type="submit" class="bts">
+                                <p>Algum comentario?</p>
+                                <label for="curso">
+                                    <textarea name="comentario" id="curso" cols="30" rows="10"
+                                        placeholder="Digite aqui o seu comentario"></textarea>
+                                </label>
 
-            <input type="reset" class="bts">      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Os dois cursos
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
+                                <br>
+                                <input type="submit" class="bts">
 
-        <form action="https://formspree.io/xwknykjw https://formspree.io/mknvygdg ">
+                                <input type="reset" class="bts">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModa3">
+                Os dois Cursos
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Os dois Cursos</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="https://formspree.io/xaydvqvj https://formspree.io/mknvygdg ">
 
 
-            <br>
-            <label for="nome">
-                Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-            </label>
+                                <br>
+                                <label for="nome">
+                                    Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                                </label>
 
-            <br>
+                                <br>
 
-            <label for="email">
-                Email: <input type="email" name="email" id="email" placeholder="Digite seu email">
-            </label>
+                                <label for="email">
+                                    Email: <input type="email" name="email" id="email" placeholder="Digite seu email">
+                                </label>
 
-            <br>
+                                <br>
 
-            <p>Algum comentario?</p>
-            <label for="curso">
-                <textarea name="curso" id="curso" cols="30" rows="10"
-                    placeholder="Digite aqui seu comentario"></textarea>
-            </label>
+                                <p>Algum comentario?</p>
+                                <label for="curso">
+                                    <textarea name="comentario" id="curso" cols="30" rows="10"
+                                        placeholder="Digite aqui seu comentario"></textarea>
+                                </label>
 
-            <br>
-            <input type="submit" class="bts">
+                                <br>
+                                <input type="submit" class="bts">
 
-            <input type="reset" class="bts">
+                                <input type="reset" class="bts">
 
-        </form>      </div>
-    </div>
-  </div>
-</div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            
 
-          
+
         </div>
     </main>
 
 </body>
-
