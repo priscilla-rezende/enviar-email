@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coloque seus dados aqui para enviarmos o email</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -13,12 +25,28 @@
         <h1>Ola, <br> Coloque seus dados abaixo para que possamos enviar o conteudo!</h1>
     </header>
     <main>
-        <form action="https://formspree.io/xwknykjw">
 
-            <h2>Vocês receberão um email com os videos</h2>
+        <div class="form">
+            <h2>Selecione curso desejado</h2>
 
+            <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Curso da Fran
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+       
+        <form action="https://formspree.io/mknvygdg">
+
+            <br>
             <label for="nome">
-              Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
             </label>
 
             <br>
@@ -29,21 +57,106 @@
 
             <br>
 
-            <p>Qual o curso você quer receber?</p>
+            <p>Algum comentario?</p>
             <label for="curso">
-                <textarea name="curso" id="curso" cols="30" rows="10" placeholder="Digite o nome do curso que você quer receber o video exemplo: Fran ou Vanda"></textarea>
+                <textarea name="curso" id="curso" cols="30" rows="10"
+                    placeholder="Digite aqui o seu comentario"></textarea>
             </label>
 
             <br>
             <input type="submit" class="bts">
-        
-            <input type="reset"  class="bts">
 
-        </form>
+            <input type="reset" class="bts">
+
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Curso da Michele
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <form action="https://formspree.io/xwknykjw">
+
+            <br>
+            <label for="nome">
+                Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            </label>
+
+            <br>
+
+            <label for="email">
+                Email: <input type="email" name="email" id="email" placeholder="Digite seu email">
+            </label>
+
+            <br>
+
+            <p>Algum comentario?</p>
+            <label for="curso">
+                <textarea name="curso" id="curso" cols="30" rows="10"
+                    placeholder="Digite aqui o seu comentario"></textarea>
+            </label>
+
+            <br>
+            <input type="submit" class="bts">
+
+            <input type="reset" class="bts">      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Os dois cursos
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+
+        <form action="https://formspree.io/xwknykjw https://formspree.io/mknvygdg ">
+
+
+            <br>
+            <label for="nome">
+                Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            </label>
+
+            <br>
+
+            <label for="email">
+                Email: <input type="email" name="email" id="email" placeholder="Digite seu email">
+            </label>
+
+            <br>
+
+            <p>Algum comentario?</p>
+            <label for="curso">
+                <textarea name="curso" id="curso" cols="30" rows="10"
+                    placeholder="Digite aqui seu comentario"></textarea>
+            </label>
+
+            <br>
+            <input type="submit" class="bts">
+
+            <input type="reset" class="bts">
+
+        </form>      </div>
+    </div>
+  </div>
+</div>
+
+            
+
+          
+        </div>
     </main>
-    <footer>
-        <p>by from Davi Rezende</p>
-    </footer>
+
 </body>
 
 =======
