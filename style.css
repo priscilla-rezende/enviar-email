@@ -44,6 +44,8 @@ form input{
     border-radius: 4px;
 }
 
+
+
 .bts{
     background-color: #4c4cc0;
     padding: 0.6rem;
@@ -72,9 +74,15 @@ footer{
     html{
         font-size: 40%;
     }
+
+    textarea{
+        width: 50vw;
+        height: 10vh;
+        margin-bottom: 20px;
+    }
 }
 
-@media (max-width: 332px){
+@media (max-width: 360px){
     
     form input{
         width: 25vw;
@@ -82,6 +90,10 @@ footer{
 
     main form{
         width: 60vw;
+    }
+
+    textarea{
+        width: 50vw;
     }
 
 }
